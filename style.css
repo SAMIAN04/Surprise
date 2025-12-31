@@ -1,7 +1,7 @@
 #envelope {
   position: relative;
-  width: 380px;
-  height: 280px;
+  width: 680px;
+  height: 300px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   margin-left: auto;
@@ -9,6 +9,9 @@
   top: 30vh;
   background-color: #d9534f; /* Warm romantic red */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  
+  justify-content: center;
 }
 
 .front {
@@ -19,21 +22,21 @@
 }
 
 .flap {
-  border-left: 240px solid transparent;
-  border-right: 240px solid transparent;
-  border-bottom: 182px solid transparent;
+  border-left: 340px solid transparent;
+  border-right: 340px solid transparent;
+  border-bottom: 282px solid transparent;
   /* a little smaller */
-  border-top: 198px solid #d9534f; /* Same romantic red */
+  border-top: 298px solid #d9534f; /* Same romantic red */
   /* a little larger */
   transform-origin: top;
   pointer-events: none;
 }
 
 .pocket {
-  border-left: 240px solid #f5a3a2; /* Soft pinkish red for the pocket */
-  border-right: 240px solid #f5a3a2;
-  border-bottom: 190px solid #ff6f61; /* Lighter romantic red */
-  border-top: 190px solid transparent;
+  border-left: 340px solid #f5a3a2; /* Soft pinkish red for the pocket */
+  border-right: 340px solid #f5a3a2;
+  border-bottom: 200px solid #ff6f61; /* Lighter romantic red */
+  border-top: 290px solid transparent;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
@@ -41,11 +44,11 @@
 .letter {
   position: relative;
   background-color: #fff;
-  width: 100%;
-  margin-left: 15%;
-  margin-right: auto;
-  height: 90%;
-  top: 5%;
+  width: 95%;
+  
+ 
+  height: 130%;
+  
   border-radius: 6px;
   box-shadow: 0 2px 26px rgba(0, 0, 0, 0.12);
   font-family: sans-serif;
@@ -60,38 +63,48 @@
   left: 0;
   right: 0;
 }
-
+.heading{
+margin: 0;
+padding: 0%;
+position: absolute;
+top: 14%;
+ color: #d9534f;
+ font-family: sans-serif;
+ font-size: 3rem;
+}
 .words {
   position: absolute;
-  left: 10%;
-  width: 80%;
+  left: 16%;
+  width: 70%;
   height: 14%;
-  line-height: 17px;
+  line-height: 29px;
+  letter-spacing:0.5px ;
 }
 
-.words.line1 {
+.line1 {
   top: 10%;
-  font-size: 0.5rem;
+  font-size: 1rem !important;
   width: 70%;
   height: 7%;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  
 }
 
 .words.line2 {
-  top: 30%;
+  top: 20%;
   text-align: start;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .words.line3 {
-  top: 80%;
-  font-size: 1rem;
+  top: 70%;
+  font-size: 1.8rem;
   text-align: center;
 }
 
 .words.line4 {
   top: 70%;
-  font-size: 1.1rem;
+  font-size: 1.rem;
   text-align: center;
 }
 
@@ -234,7 +247,13 @@ body {
 }
 
 .envlope-wrapper {
-  height: 380px;
+  height: 100vh;
+  width: 100vw;
+ 
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  
 }
 
 .reset {
